@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <mata charset="UTF-8">
+    <title>片桐雅斗のポートフォリオ</title>
+    <meta name="description" content="今までの経歴や、作成物を紹介します。">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!--<h1 class="main-title">片桐雅斗のポートフォリオ</h1>-->
+    <img class="top-image" src="images/portfolio-top.jpg" alt="片桐雅斗のポートフォリオ">
+    <header>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="#1">PROFILE</a></li>
+          <li><a href="#2">SKILL</a></li>
+          <li><a href="#3">MAKE</a></li>
+          <li><a href="#4">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="profile-area">
+      <br id="1">
+      <h1 class="profile-title">PROFILE</h1>
+      <div class="profile-set">
+        <img class="profile-images" src="" alt="本人写真">
+        <nav>
+          <ul class="profile-list">
+            <li>名前:片桐 雅斗</li>
+            <li>生年月日:1993年 2月 15日</li>
+            <li>出身:岐阜県 関市</li>
+            <li>最終学歴：私立 愛知淑徳大学 心理学部 心理学科 卒業</li>
+            <br>
+            <li>職歴:2015年４月より、新卒にて株式会社エーエルイーに入社。住宅設備・リフォームの個人営業を行う。同年7月退社。<br>
+                2016年４月より、株式会社グリーンズに入社。コンフォートホテルにてフロント業務を行う。<br>
+                2018年１月より店舗主任に昇格。フロント業務に加え、店舗運営・販売管理にも関わる。2019年3月より店長に昇格。</li>
+            <li>転職の動機:ホテル業にて一番の商材は客室設備である。スタッフの接客も商材の一部だが、顧客からの重要度は低い。<br>
+                そのため、販売施策としても広告やクーポンの発行などが主であり、個人のスキルアップが売上に反映されにくい。<br>
+                より個人のスキルアップが売上に反映される仕事に就きたいと思い、転職を決意した。</li>
+          </ul>
+        </nav>
+    </div>
+    <br>
+
+    <div class="skill-area">
+      <br id="2">
+      <h1 class="skill-title">SKILL</h1>
+      <p>プログラミングスクールにて主にJavaを3ヶ月間学習しました。</p>
+        <div class="skill-layout">
+          <div class="skill-item">
+            <nav>
+              <li>言語:Java、SQL</li>
+              <li>DB:MySQL</li>
+              <li>AP:Tomcat</li>
+              <li>開発環境:Eclipse</li>
+            </nav>
+          </div>
+          <div class="skill-item">
+            <nav>
+              <li>Javaの文法とルール</li>
+              <li>オブジェクト指向の基礎</li>
+              <li>MySQLとDBの基本</li>
+              <li>JDBCについて</li>
+              <li>Java Webアプリケーション</li>
+            </nav>
+          </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="make-area">
+      <br id="3">
+      <h1 class="make-title">MAKE</h1>
+      <p>制作物の一覧です。</p>
+      <div class="make grid">
+        <div class="grid-item">
+          <img src="images/portfolio.png" alt="ポートフォリオ">
+          <p>ポートフォリオ</p>
+          <p>自分自身のポートフォリオです。</p>
+          <p>HTML/CSS</p>
+        </div>
+        <div class="grid-item">
+          <img src="images/threegames.png" alt="Three Games">
+          <p>Three Games!</p>
+          <p>3つの簡単なゲームで遊べるサイトです。</p>
+          <p>Java</p>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="contact-area">
+      <br id="4">
+      <h1 class="contact-title">CONTACT</h1>
+      <p>ご連絡は下記メールアドレスまでお願いします。</p>
+      <p>rs2oy1@gmail.com</p>
+    </div>
+    <br>
+
+    <footer>
+      <nav>
+        <ul class="footer-nav">
+          <li><a href="#1">PROFILE</a></li>
+          <li><a href="#2">SKILL</a></li>
+          <li><a href="#3">MAKE</a></li>
+          <li><a href="#4">CONTACT</a></li>
+        </ul>
+      </nav>
+        <p>Copyright<small>&copy; 2020 Masato Katagiri</small></p>
+    </footer>
+  </body>
+
+</html>
